@@ -1,4 +1,5 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
 However, this project is mostly relevant to Storybook UI components therefore, the best benefit for this project is to run this on Storybook.
 
 **List the installation that we use on this project.**
