@@ -2,7 +2,7 @@
 
 import react, { useState } from "react";
 import Image from "next/image";
-import ColorButton from "../../component/colorButton"
+import ColorButton from "../../component/ColorButton"
 
 export default function Home() {
 

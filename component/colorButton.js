@@ -1,44 +1,25 @@
-"use client";
+import { Button } from 'antd';
+import PropTypes from "prop-types";
 
-import react, { useState } from "react";
-import { Button } from "antd";
-
-const App = (props) => {
-  const { count, setCount} = props;
-  const [color, setColor] = useState("blue");
-
-  const onClickColor = () => {
-    if (color === "blue") {
-      setColor("red")
-    } else {
-      setColor("blue");
-    }
-    setCount(count+1);
-  };
-
-  const onClickReset = () => {
-    setCount(0);
-  };
+function ColorButton({ label = "Submit", size = "small", backgroundColor = "blue", onClick, color = "white" }) {
 
   return (
-    <>
-      <Button
-        type="primary"
-        style={{backgroundColor: color, marginRight: "8px"}}
-        onClick={()=>onClickColor()}
-      >
-        Click to change color
-      </Button>
+    <Button
+      style={{ backgroundColor: backgroundColor, color: color }}
+      size={size}
+      onClick={onClick}
+    >
+      {label}
+    </Button>
+  )
+}
 
-      <Button
-        type="primary"
-        style={{backgroundColor: "yellow", color:"Black"}}
-        onClick={()=>onClickReset()}
-      >
-        Reset
-      </Button>
-    </>
-      
-    );
+ColorButton.propTypes = {
+  label: PropTypes.string,
+  backgroundColor: PropTypes.string,
+  color: PropTypes.string,
+  size: PropTypes.oneOf(["small", "default", "large"]),
+  onClick: PropTypes.func,
 };
-export default App;
+
+export default ColorButton;
