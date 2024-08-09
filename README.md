@@ -3,11 +3,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 However, this project is mostly relevant to Storybook UI components therefore, the best benefit for this project is to run this on Storybook.
 
 **List the installation that we use on this project.**
-react
-antd
-storybook
-next
-prop-types
+1.react
+2.antd
+3.storybook
+4.next
+5.prop-types
 
 
 ## Getting Started
